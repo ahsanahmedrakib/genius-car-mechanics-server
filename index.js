@@ -69,6 +69,10 @@ app.get("/", (req, res) => {
   res.send("Running Car Mechanics Server");
 });
 
+app.get("/hello", (req, res) => {
+  res.send("Hello API");
+})
+
 app.listen(port, () => {
   console.log("Running genius server on port:", port);
 });
